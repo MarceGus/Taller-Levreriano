@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -31,12 +35,42 @@ li a:hover {
 h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
+  font-weight: 400;
 }
 
 h2  {
    font-family: 'Roboto', sans-serif;
-   font-size: 80%;
+   font-size: 60%;
+   font-weight: 900;
 }
+
+h3  {
+   font-family: 'Roboto', sans-serif;
+   font-size: 40%;
+   font-weight: 300;
+}
+
+/* @media screen and (max-width: 800px) {
+  h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h2  {
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   font-weight: 900;
+}
+
+h3  {
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+   font-weight: 300;
+}
+
+} */
+
 
 .wrapper {
   background-image: url(bgbig.jpg);
@@ -45,6 +79,26 @@ h2  {
   font-size: 15vw;
 
 }
+
+@media screen and (max-height: 1024px) {
+  .wrapper {
+  background-image: url(bgbig.jpg);
+  background-size: cover;
+  height: 100vh;
+  font-size: 15vw;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .wrapper {
+  background-image: url(bgbig.jpg);
+  background-size: cover;
+  height: 100vw;
+  font-size: 15vw;
+  }
+}
+
+
 
 .opening {
   font-family: 'Roboto', sans-serif;
@@ -71,6 +125,54 @@ h2  {
 
 .intro {
   width: 90vw;
-  height: 100vh;
-  font-size: 30px;
-}
+  height: 80vh;
+  font-size: 5vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-content: flex-start;
+  }
+
+  @media screen and (max-width: 800px){
+    .intro{
+    width: 90vw;
+    height: 80vh;
+    font-size: 7vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    margin-right: 50px;
+    }
+  }
+
+    /*@media screen and (max-height: 414px){
+    .intro{
+      width: 80vw;
+      height: 80vh;
+      font-size: 8.3vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-content: flex-start;
+      padding-right: 50px;
+    }
+  }
+
+
+    @media screen and (max-width: 414px){
+    .intro{
+      width: 80vw;
+      height: 80vh;
+      font-size: 8.3vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+      padding-right: 50px;
+    }
+  }*/
